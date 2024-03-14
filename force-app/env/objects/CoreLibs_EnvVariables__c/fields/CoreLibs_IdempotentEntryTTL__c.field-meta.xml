@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CoreLibs_IdempotentEntryTTL__c</fullName>
+    <defaultValue>7</defaultValue>
+    <description>TTL for idempotent entries for apis.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>TTL for idempotent entries for apis.</inlineHelpText>
+    <label>IdempotentEntryTTL</label>
+    <precision>3</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

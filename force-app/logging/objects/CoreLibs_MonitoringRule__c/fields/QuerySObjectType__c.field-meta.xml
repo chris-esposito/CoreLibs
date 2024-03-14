@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QuerySObjectType__c</fullName>
+    <description>The SObject that the query rule should run against.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The SObject that the query rule should run against.</inlineHelpText>
+    <label>Query SObject Type</label>
+    <length>100</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

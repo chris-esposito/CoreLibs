@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CoreLibs_AccountTeamViewerDefaultFields</fullName>
+    <description
+  >Used in the corelibsTeamViewer component to load default fields to render if no override has been provided</description>
+    <displayedFields>
+        <field>User.Name</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>User.Phone</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>User.Email</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Account Team Viewer Default Fields</label>
+</FieldSet>

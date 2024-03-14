@@ -1,0 +1,39 @@
+<template>
+    <lightning-card title="Cleanup Settings">
+        <template if:true={loading}>
+            <lightning-spinner variant="brand" size="large"></lightning-spinner>
+        </template>
+        <template if:false={loading}>
+            <lightning-layout multiple-rows vertical-align="center">
+                <lightning-layout-item size="12" padding="around-small">
+                    <lightning-formatted-text value={currentSchedule}></lightning-formatted-text><br />
+                    <lightning-formatted-text value={lastRun}></lightning-formatted-text>
+                </lightning-layout-item>
+                <lightning-layout-item size="6" padding="around-small">
+                    <lightning-input 
+                        label="Retain Logs For (Days)" 
+                        type="number" 
+                        value={currentRetainForValue} 
+                        max="999" 
+                        onchange={onRetainLogsForChange}
+                    ></lightning-input>
+                </lightning-layout-item>
+                <lightning-layout-item size="3" padding="around-small">
+                    <lightning-button label="Save" variant="brand" onclick={saveRetainLogsFor}></lightning-button>
+                </lightning-layout-item>
+                <lightning-layout-item size="6" padding="around-small">
+                    <lightning-input 
+                        label="Daily Schedule Cleanup Job (0-23)" 
+                        type="number" 
+                        min="0"
+                        max="23"
+                        onchange={onSetScheduleTime}    
+                    ></lightning-input>
+                </lightning-layout-item>
+                <lightning-layout-item size="3" padding="around-small">
+                    <lightning-button label="Schedule" variant="brand" onclick={scheduleCleanupJob}></lightning-button>
+                </lightning-layout-item>
+            </lightning-layout>
+        </template>
+    </lightning-card>
+</template>

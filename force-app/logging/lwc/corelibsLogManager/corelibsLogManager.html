@@ -1,0 +1,23 @@
+<template>
+    <template if:true={showApp}>
+        <template if:true={loading}>
+            <lightning-spinner variant="brand" size="large"></lightning-spinner>
+        </template>
+        <lightning-layout>
+            <lightning-layout-item size="9" padding="around-small">
+                <c-corelibs-log-manager-filters onapplyfilter={onApplyFilter}></c-corelibs-log-manager-filters>
+            </lightning-layout-item>
+            <lightning-layout-item size="3" padding="around-small">
+                <c-corelibs-log-cleanup-settings></c-corelibs-log-cleanup-settings>
+            </lightning-layout-item> 
+        </lightning-layout>
+        <lightning-layout>
+            <lightning-layout-item size="12" padding="around-small">
+                <c-corelibs-log-manager-results logs={logs}></c-corelibs-log-manager-results>
+            </lightning-layout-item>
+        </lightning-layout>
+    </template>
+    <template if:false={showApp}>
+        <lightning-formatted-text value="You do not have access to this application. Please reach out to a system administrator."></lightning-formatted-text>
+    </template>
+</template>

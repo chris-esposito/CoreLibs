@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description
+  >Base permission that should be given to all devs/admins for library access and advanced features</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Salesforce Developer</label>
+    <permissionSets>CoreLibs_BaseApiPermissions</permissionSets>
+    <permissionSets>CoreLibs_BaseLoggingPermissions</permissionSets>
+    <permissionSets>CoreLibs_BypassFls</permissionSets>
+    <permissionSets>CoreLibs_ManageLogs</permissionSets>
+    <permissionSets>CoreLibs_ManageMonitoring</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

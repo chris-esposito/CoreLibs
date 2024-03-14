@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>CoreLibs_LogRecordPage</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>CoreLibs_Log__c</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>CoreLibs_LogRecordPage</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>CoreLibs_Log__c</pageOrSobjectType>
+    </actionOverrides>
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>App for various functions related to logging and monitoring on the SF platform.</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>Logging and Monitoring</label>
+    <navType>Console</navType>
+    <tabs>CoreLibs_LogManager</tabs>
+    <tabs>CoreLibs_Log__c</tabs>
+    <tabs>CoreLibs_MonitoringRule__c</tabs>
+    <tabs>CoreLibs_MonitoringAlert__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>CoreLibs_LoggingAndMonitoringUtilityBar</utilityBar>
+    <workspaceConfig>
+        <mappings>
+            <tab>CoreLibs_LogManager</tab>
+        </mappings>
+        <mappings>
+            <tab>CoreLibs_Log__c</tab>
+        </mappings>
+        <mappings>
+            <tab>CoreLibs_MonitoringAlert__c</tab>
+        </mappings>
+        <mappings>
+            <tab>CoreLibs_MonitoringRule__c</tab>
+        </mappings>
+    </workspaceConfig>
+</CustomApplication>

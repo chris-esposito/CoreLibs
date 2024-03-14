@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>CoreLibs_BypassFls</name>
+    </customPermissions>
+    <description>Permission set that grants convenient access to the custom permission to bypass fls.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Core Libs Bypass FLS</label>
+</PermissionSet>

@@ -1,0 +1,6 @@
+<template>
+  <template if:true={isLoading}>
+    <lightning-spinner alternative-text="Loading" size="large" variant="brand"></lightning-spinner>
+  </template>
+  <lightning-datatable key-field="Id" data={rows} columns={columns} hide-checkbox-column> </lightning-datatable>
+</template>

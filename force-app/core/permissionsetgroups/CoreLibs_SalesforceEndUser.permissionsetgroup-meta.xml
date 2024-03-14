@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Base group that should be added to all end users to provide access to core frameworks.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Salesforce End User</label>
+    <permissionSets>CoreLibs_BaseApiPermissions</permissionSets>
+    <permissionSets>CoreLibs_BaseLoggingPermissions</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

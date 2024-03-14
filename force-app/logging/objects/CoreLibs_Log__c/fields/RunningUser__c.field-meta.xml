@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RunningUser__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>The user executing the transaction in which the log was generated.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The user executing the transaction in which the log was generated.</inlineHelpText>
+    <label>Running User</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Logs</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

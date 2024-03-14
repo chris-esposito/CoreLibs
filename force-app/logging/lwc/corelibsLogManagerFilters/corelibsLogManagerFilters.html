@@ -1,0 +1,38 @@
+<template>
+    <lightning-card title="Filters">
+        <lightning-layout>
+            <lightning-layout-item size="4" padding="around-small">
+                <lightning-input name="transactionId" label="Transaction Id" type="search"></lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item size="4" padding="around-small">
+                <lightning-input name="runningUserid" label="Running User Id" type="search"></lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item size="4" padding="around-small">
+                <lightning-input name="runningUserSessionId" label="Running User session Id" type="search"></lightning-input>
+            </lightning-layout-item>
+        </lightning-layout>
+        <lightning-layout vertical-align="center">
+            <lightning-layout-item size="4" padding="around-small">
+                <lightning-combobox
+                    name="type"
+                    label="Type"
+                    options={options}
+                ></lightning-combobox>
+            </lightning-layout-item>
+            <lightning-layout-item size="4" padding="around-small">
+                <lightning-input type="datetime" name="startTime" label="Start Time"></lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item size="4" padding="around-small">
+                <lightning-input type="datetime" name="endTime" label="End Time"></lightning-input>
+            </lightning-layout-item>
+        </lightning-layout>
+        <lightning-layout horizontal-align="center">
+            <lightning-layout-item padding="around-small">
+                <lightning-button-group>
+                    <lightning-button label="Apply" variant="brand" onclick={applyFilters}></lightning-button>
+                    <lightning-button label="Clear" onclick={clearFilters}></lightning-button>
+                </lightning-button-group>            
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>

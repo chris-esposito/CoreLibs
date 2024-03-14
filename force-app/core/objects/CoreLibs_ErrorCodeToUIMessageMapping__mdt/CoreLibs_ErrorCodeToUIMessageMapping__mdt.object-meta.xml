@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Configuration for mapping error codes to UI messages.</description>
+    <label>Error Code to UI Message Mapping</label>
+    <pluralLabel>Error Code to UI Message Mappings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

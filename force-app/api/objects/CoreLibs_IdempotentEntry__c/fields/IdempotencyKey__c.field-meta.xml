@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IdempotencyKey__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>The Idempotency key used to guarantee that redundant requests aren&apos;t processed.</description>
+    <externalId>true</externalId>
+    <inlineHelpText
+  >The Idempotency key used to guarantee that redundant requests aren&apos;t processed.</inlineHelpText>
+    <label>Idempotency Key</label>
+    <length>255</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ClassName__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+  NOT(ISBLANK(CustomClass__c)), 
+  CustomClass__c,
+  CASE(RecordType.DeveloperName , 
+  &apos;QueryRule&apos;, &apos;QueryRuleProcessor&apos;,
+  &apos;&apos;
+))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Class Name</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

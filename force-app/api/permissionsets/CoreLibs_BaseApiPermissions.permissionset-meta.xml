@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <classAccesses>
+        <apexClass>CoreLibs_WebApiEndpoint</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <customMetadataTypeAccesses>
+        <enabled>true</enabled>
+        <name>CoreLibs_ApiEndpoint__mdt</name>
+    </customMetadataTypeAccesses>
+    <description>The base permissions for interacting with the API library.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Core Libs Base API Permissions</label>
+</PermissionSet>
